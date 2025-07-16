@@ -5,6 +5,10 @@ public abstract class Produto {
     protected String pais; 
     protected double precoBruto;
 
+    public String getTitulo(){
+        return titulo;
+    }
+
     public Produto(String titulo, int ano, String pais, double precoBruto){
         this.titulo = titulo;
         this.ano = ano;
