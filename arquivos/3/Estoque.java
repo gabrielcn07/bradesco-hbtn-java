@@ -50,8 +50,6 @@ public class Estoque {
         boolean removido = produtos.removeIf(p -> p.getId() == id);
         if (removido) {
             salvarEstoque();
-        } else {
-            System.out.println("Produto não encontrado.");
         }
     }
 
