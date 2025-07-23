@@ -59,5 +59,18 @@ public class Program {
         } catch (Exception ex) {
             System.out.println(ex.getMessage() + "\n");
         }
+ try {
+            Livro livro3 = new Livro(
+                    "Harry Potter e o enigma do principe",
+                    "J.K. Rowling",
+                    0);
+
+            System.out.printf(new Locale("pt", "BR"),"Titulo: %s - Autor: %s - Preco: %.2f\n",
+                    livro3.getTitulo(),
+                    livro3.getAutor(),
+                    livro3.getPreco());
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage() + "\n");
+        }
     }
 }
