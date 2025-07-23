@@ -18,6 +18,6 @@ public class FileReadingExercise {
             System.out.println("Erro ao ler o arquivo: " + e.getMessage());
         }
 
-        System.out.println("Leitura do arquivo concluida.");
+        System.out.println("Leitura do arquivo concluída.");
     }
 }
