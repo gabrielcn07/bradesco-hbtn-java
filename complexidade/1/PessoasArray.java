@@ -23,7 +23,7 @@ public class PessoasArray {
         System.out.printf("Procurando pelo nome: \"%s\"\n", nome);
         for(int i = 0; i < nomes.length; i++){
             System.out.printf("Passando pelo indice:%d\n", i);
-            if(nomes[i].equalsIgnoreCase(nome)){
+            if(nomes[i] == nome){
                System.out.printf("Nome pesquisado é %s que está na posição %d\n", nomes[i], i);
                encontrado = true;
             }
