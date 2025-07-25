@@ -9,7 +9,7 @@ public class ListaTodo {
     public void adicionarTarefa(Tarefa tarefaAdicional) throws Exception{
         for(Tarefa tarefaAtual : tarefa){
             if(tarefaAtual.getIdentificador() == tarefaAdicional.getIdentificador()){
-                throw new Exception("Tarefa com identificador " + tarefaAdicional.getIdentificador() + " ja existente na lista");
+                throw new IllegalArgumentException("Tarefa com identificador " + tarefaAdicional.getIdentificador() + " ja existente na lista");
             }
         }
         tarefa.add(tarefaAdicional);
