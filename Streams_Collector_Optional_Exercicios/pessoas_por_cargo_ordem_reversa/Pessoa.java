@@ -19,9 +19,17 @@ public class Pessoa implements Comparable<Pessoa> {
         return cargo;
     }
 
+    public int getCodigo() {
+        return this.codigo;
+    }
+
+    public String getNome() {
+        return this.nome;
+    }
+
     @Override
     public String toString() {
-        return String.format("[%d] %s %s %d R$ %.6f", codigo, nome, cargo, idade, salario).replace('.', ',');
+        return "[" + codigo + "] " + nome + " " + cargo + " " + idade + " R$ " + String.format("%.6f", salario).replace('.', ',');
     }
 
     @Override
